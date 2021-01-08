@@ -1,13 +1,22 @@
 import numpy as np
 from scipy.special import iv
 
+# From the paper "Hypersphere Fitting from Noisy Data Using an EM Algorithm" by Julien Lesouple, Barbara Pilastre,
+# Yoann Altmann, and Jean-Yves Tourneret, accepted in IEEE Signal Processing Letters
+
+# By Julien Lesouple (https://perso.tesa.prd.fr/jlesouple)
+# 8 Jan. 2021
+
+
 class em_hypersphere(object):
     
     def __init__(self, n_iter = 100):
         self.n_iter = n_iter
         
     def fit_hypersphere(self, Z, kappa_prior = 0, mu_prior = None):
-        
+        """Fits the hypersphere using observations Z and von Mises-Fisher prior with parmeters 
+        kappa_prior (concentration parameter) and mu_prior (mean direction). If kappa_prior = 0, it is equivalent to a uniform prior."""
+
         [n, d] = Z.shape
         
         if mu_prior is None :
