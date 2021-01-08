@@ -2,7 +2,7 @@
 This repository contains codes associated with my works on hypersphere fitting
 
 ## IEEE-SPL
-This folder contains codes associated with the paper "Hypersphere Fitting from Noisy Data Using an EM Algorithm" accepted in IEEE Signal Processing Letters.
+This folder contains codes associated with the paper "Hypersphere Fitting from Noisy Data Using an EM Algorithm", Julien Lesouple, Barbara Pilastre, Yoann Altmann and Jean-Yves Tourneret, accepted in IEEE Signal Processing Letters.
 
 ### MATLAB
 This folder contains Matlab codes that allows to reproduce most of the results in the article, namely Figs. 2, 4, 5 and 6 and Table 1, as well as Figs. 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14 of the technical report. 
